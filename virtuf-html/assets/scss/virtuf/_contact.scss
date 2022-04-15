@@ -1,0 +1,326 @@
+/*
+-----------------------------------------------------------------------
+	Contact CSS
+-----------------------------------------------------------------------
+*/
+.contact-area {
+	padding: 117px 0 220px;
+	position: relative;
+	@media #{$lg-device} {
+		padding: 80px 0 150px;
+	}
+}
+
+.contact-info-content {
+	background-color: $theme-color3;
+	border: 1px solid rgba(white, .1);
+	border-radius: 35px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 69px;
+	overflow: hidden;
+	padding: 0 71px 0;
+	@media #{$lg-device} {
+		padding: 0 30px 0;
+	}
+	@media #{$sm-device} {
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		display: block;
+		margin-bottom: 35px;
+		padding: 0;
+	}
+	.contact-info-item {
+		display: flex;
+		padding: 53px 0 49px;
+		position: relative;
+		z-index: 1;
+		@media #{$md-device} {
+			padding: 33px 0 35px;
+			display: block;
+		}
+		@media #{$sm-device} {
+			background-color: $theme-color3;
+			border: 1px solid rgba(white, .1);
+			border-radius: 35px;
+			margin-bottom: 30px;
+			padding: 33px 30px 35px;
+			text-align: center;
+		}
+		.icon {
+			background-color: #2a2c38;
+			border-radius: 32px;
+			width: 100px;
+			height: 100px;
+			line-height: 98px;
+			margin-right: 39px;
+			margin-top: 3px;
+			text-align: center;
+			@include transition(.3s);
+			@media #{$lg-device} {
+				border-radius: 18px;
+				height: 70px;
+				line-height: 70px;
+				margin-right: 18px;
+				width: 70px;
+			}
+			@media #{$md-device} {
+				margin-bottom: 20px;
+			}
+			@media #{$sm-device} {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			img {
+				@media #{$lg-device} {
+					width: 48%;
+				}
+			}
+		}
+		.content {
+			h4 {
+				color: $white;
+				font-size: 25px;
+				margin-bottom: 25px;
+				@media #{$md-device} {
+					font-size: 20px;
+					margin-bottom: 18px;
+				}
+				@media #{$sm-device} {
+					font-size: 24px;
+				}
+			}
+			.line-icon {
+				display: block;
+				margin-bottom: 21px;
+				@media #{$md-device} {
+					margin-bottom: 15px;
+				}
+				@media #{$sm-device} {
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			a, p {
+				color: $white;
+				display: block;
+				font-size: 18px;
+				font-weight: $font-weight-medium;
+				margin-bottom: 0px;
+				line-height: 32px;
+				@media #{$md-device} {
+					font-size: 15px;
+				}
+			}
+			a {
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+		&:hover {
+			.icon {
+				background-color: $white;
+			}
+		}
+		&:first-child {
+			&:after {
+				border: 1px solid rgba(white, .1);
+				border-radius: 50%;
+				content: "";
+				height: 542px;
+				position: absolute;
+				right: -49px;
+				top: calc(-50% - 23px);
+				width: 542px;
+				z-index: -1;
+				@media #{$lg-device} {
+					right: -30px;
+				}
+				@media #{$md-device} {
+					border-radius: 0;
+					border: none;
+					border-right: 1px solid rgba(white, .1);
+					right: -60px;
+				}
+				@media #{$sm-device} {
+					display: none;
+				}
+			}
+		}
+		&:last-child {
+			&:before {
+				border: 1px solid rgba(white, .1);
+				border-radius: 50%;
+				content: "";
+				height: 542px;
+				left: -50px;
+				position: absolute;
+				top: calc(-50% - 23px);
+				width: 542px;
+				z-index: -1;
+				@media #{$lg-device} {
+					left: -35px;
+				}
+				@media #{$md-device} {
+					border-radius: 0;
+					border: none;
+					border-left: 1px solid rgba(white, .1);
+					left: -60px;
+				}
+				@media #{$sm-device} {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.contact-page-wrapper {
+	.site-wrapper-reveal {
+		overflow: inherit;
+	}
+	.contact-area {
+		padding: 150px 0 0;
+		@media #{$lg-device} {
+			padding: 100px 0 0;
+		}
+		@media #{$sm-device} {
+			padding: 70px 0 0;
+		}
+	}
+	.contact-colunm {
+		margin-bottom: -290px;
+	}
+	.contact-info-light {
+		margin: 0 auto;
+		max-width: 1285px;
+		padding-left: 15px;
+		padding-right: 15px;
+		@media #{$lg-device} {
+			max-width: 960px;
+		}
+		@media #{$md-device} {
+			max-width: 720px;
+		}
+		@media #{$sm-device} {
+			max-width: 540px;
+		}
+		.contact-info-content {
+			background-color: #f6f7fc;
+			margin-bottom: 150px;
+			@media #{$lg-device} {
+				margin-bottom: 100px;
+			}
+			@media #{$sm-device} {
+				background-color: transparent;
+				margin-bottom: 50px;
+			}
+			.contact-info-item {
+				@media #{$sm-device} {
+					background-color: #f6f7fc;
+				}
+				.icon {
+					background-color: $white;
+				}
+				.content {
+					h4 {
+						color: $theme-color3;
+					}
+					a, p {
+						color: #55586b;
+						&:hover {
+							color: $theme-color3;
+						}
+					}
+				}
+				&:first-child {
+					&:after {
+						border-color: $theme-color;
+					}
+				}
+				&:last-child {
+					&:before {
+						border-color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-area {
+		padding-top: 390px;
+	}
+}
+
+.contact-colunm {
+	display: flex;
+	@media #{$sm-device} {
+		display: block;
+	}
+	.contact-map-area {
+		width: 57.264%;
+		@media #{$lg-device} {
+			width: 50%;
+		}
+		@media #{$sm-device} {
+			margin-bottom: 50px;
+			width: 100%;
+		}
+	}
+	.contact-form {
+		background-color: $theme-color;
+		padding: 60px 70px 61px;
+		width: 42.736%;
+		@media #{$lg-device} {
+			padding: 60px 30px 61px;
+			width: 50%;
+		}
+		@media #{$sm-device} {
+			width: 100%;
+		}
+		.section-title {
+			margin-bottom: 28px;
+			.subtitle-content {
+				margin-bottom: 10px;
+				img {
+					margin-right: 9px;
+				}
+				h5 {
+					font-size: 19px;
+				}
+			}
+			.title {
+				font-size: 40px;
+
+				span {
+					&:after {
+						background-color: #73eea8;
+						bottom: 10px;
+						height: 11px;
+						left: 4px;
+						width: 115px;
+					}
+				}
+			}
+			.separator-line {
+				margin-top: 7px;
+				img {
+					margin-right: 6px;
+				}
+			}
+		}
+	}
+}
+
+.contact-map-area {
+	height: 700px;
+	@media #{$sm-device} {
+		height: 400px;
+	}
+	iframe {
+	  height: 100%;
+	  width: 100%;
+	}
+}

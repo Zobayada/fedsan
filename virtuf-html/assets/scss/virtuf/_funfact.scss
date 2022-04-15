@@ -1,0 +1,188 @@
+/*
+-----------------------------------------------------------------------
+    Funfact CSS
+-----------------------------------------------------------------------
+*/
+.funfact-area {
+  &.funfact-default-area {
+    background-color: #f6f7fc;
+    overflow: hidden;
+    padding: 105px 0 58px;
+    position: relative;
+    z-index: 1;
+    @media #{$md-device} {
+      padding: 80px 0 60px;
+    }
+    @media #{$sm-device} {
+      padding: 40px 0 50px;
+    }
+    &:before {
+      border: 2px solid $theme-color2;
+      border-radius: 50%;
+      content: "";
+      height: 725px;
+      position: absolute;
+      right: 57px;
+      top: -49px;
+      width: 725px;
+      z-index: -1;
+      @media (max-width:1599px) {
+        right: 15px;
+      }
+      @media #{$xl-device} {
+        right: 5px;
+      }
+      @media #{$lg-device} {
+        display: none;
+      }
+    }
+    &:after {
+      border: 2px solid $theme-color;
+      border-radius: 50%;
+      bottom: -252px;
+      content: "";
+      height: 684px;
+      position: absolute;
+      right: 236px;
+      width: 685px;
+      z-index: -1;
+      @media (max-width:1599px) {
+        right: 130px;
+      }
+      @media #{$xl-device} {
+        bottom: -350px;
+      }
+      @media #{$lg-device} {
+        right: 0;
+      }
+      @media #{$xs-device} {
+        display: none;
+      }
+    }
+    .section-title {      
+      @media #{$sm-device} {
+        margin-bottom: 50px;
+      }
+      .title {
+        margin-bottom: 71px;
+        padding-top: 26px;
+        @media #{$md-device} {
+          margin-bottom: 45px;
+        }
+        @media #{$sm-device} {
+          margin-bottom: 30px;
+        }
+      }
+      .btn {
+        &.btn-theme {
+          &.btn-border {
+            background-color: #f6f7fc;
+            &:hover {
+              background-color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+    .shape-line-style {
+      background-color: #eaebf1;
+      height: 100%;
+      left: 27.25%;
+      position: absolute;
+      top: 0;
+      width: 1px;
+      z-index: -1;
+      &:before {
+        background-color: #eaebf1;
+        content: "";
+        height: 83.334%;
+        left: -272px;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        z-index: -1;
+      }
+      &:after {
+        background-color: #eaebf1;
+        content: "";
+        height: 100%;
+        left: 272px;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        z-index: -1;
+        @media #{$xl-device} {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.funfact-items-style1 {
+  .funfact-item {
+    background-color: $white;
+    border-radius: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    padding: 41px 10px 10px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+    @include transition(.3s);
+    @media #{$md-device} {
+      height: 160px;
+      padding: 35px 10px 10px;
+      width: 160px;
+    }
+    @media #{$xs-device} {
+      padding: 40px 15px 10px;
+    }
+    @media #{$xxs-device} {
+      height: 130px;
+      padding: 37px 10px 10px;
+      width: 130px;
+    }
+    .number {
+      h2 {
+        font-size: 45px;
+        margin-bottom: 14px;
+        @include transition(.1s);
+        @media #{$xs-device} {
+          font-size: 36px;
+        }
+        @media #{$xxs-device} {
+          font-size: 24px;
+          margin-bottom: 7px;
+        }
+      }
+    }
+    .title {
+      color: $theme-color;
+      font-size: 14px;
+      font-family: $font-weight-medium;
+      @include transition(.3s);
+      @media #{$xxs-device} {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+    }
+    &:hover {
+      background-color: $theme-color;
+      .number {
+        h2 {
+          color: $white;
+        }
+      }
+      .title {
+        color: $white;
+      }
+    }
+    &.mt-20 {
+      @media #{$xs-device} {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

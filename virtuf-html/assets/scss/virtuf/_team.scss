@@ -1,0 +1,423 @@
+/*
+-----------------------------------------------------------------------
+	Team CSS
+-----------------------------------------------------------------------
+*/
+.team-area {
+	&.team-default-area {
+		padding: 325px 0 120px;
+		@media #{$lg-device} {
+			padding: 270px 0 70px;
+		}
+		@media #{$md-device} {
+			padding: 90px 0 60px;
+		}
+		@media #{$sm-device} {
+			padding: 70px 0 50px;
+		}
+		@media #{$xs-device} {
+			padding: 70px 0 40px;
+		}
+		.section-title {
+			margin-bottom: 94px;
+			@media #{$lg-device} {
+				margin-bottom: 30px;
+			}
+			@media #{$md-device} {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.team-member {
+	background-color: #f6f7fc;
+	border-radius: 25px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding: 50px 53px 47px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	@include transition(.3s);
+	@media #{$lg-device} {
+		padding: 50px 30px 47px;
+	}
+	@media #{$xxs-device} {
+		padding: 50px 15px 47px;
+	}
+	&:before {
+    border: 2px solid $theme-color;
+    border-radius: 50%;
+    content: "";
+    height: 284px;
+    left: 27px;
+    position: absolute;
+    top: -103px;
+    width: 284px;
+    z-index: -1;
+    @include transition(.3s);
+	}
+	&:after {
+    border: 2px solid $theme-color2;
+    border-radius: 50%;
+    content: "";
+    height: 284px;
+    left: -72px;
+    position: absolute;
+    top: -103px;
+    width: 284px;
+    z-index: -1;
+    @include transition(.3s);
+	}
+	.thumb {
+		border-radius: 22px;
+		margin: 0 auto;
+		max-width: 190px;
+		overflow: hidden;
+		position: relative;
+		img {
+			border-radius: 22px;
+			width: 100%;
+			@include transition(all 0.8s ease-in-out);
+		}
+	}
+	.content {
+		padding: 26px 0 0;
+		.member-info {
+			.separator-line {
+				line-height: 1;
+				margin-bottom: 23px;
+				img {
+					@include transition(.2s);
+				}
+			}
+			.name {
+				font-size: 27px;
+				margin-bottom: 14px;
+				@include transition(.1s);
+			}
+			.designation {
+				color: $theme-color;
+				font-size: 14px;
+				font-weight: $font-weight-normal;
+				margin-bottom: 30px;
+				@include transition(.3s);
+			}
+			.progress-item {
+				margin-bottom: 0;
+				.progress-line {
+					background-color: $white;
+					margin-bottom: 17px;
+					@include transition(.3s);
+					.progress-bar-line {
+						overflow: visible !important;
+						position: relative;
+						@include transition(.3s);
+			      &:after {
+			        background-color: $theme-color;
+			        border-radius: 50%;
+			        content: "";
+			        height: 12px;
+			        position: absolute;
+			        right: -6px;
+			        top: -3px;
+			        width: 12px;
+							@include transition(.3s);
+			      }
+					}
+				}
+				.progress-info {
+					.title {
+						font-size: 14px;
+						@include transition(.3s);
+					}
+					.percent {
+						color: $theme-color2;
+						@include transition(.3s);
+					}
+				}
+			}
+		}
+	}
+	.shape-style {
+		img {
+			@include scale(0);
+			@include transition(.3s);
+		}
+		.shape-style1 {
+			left: 47px;
+			position: absolute;
+			top: 45px;
+		}
+		.shape-style2 {
+			position: absolute;
+			right: 35px;
+			top: 23px;
+		}
+		.shape-style3 {
+			position: absolute;
+			right: 59px;
+			top: 173px;
+			@media #{$lg-device} {
+				display: none;
+			}
+		}
+	}
+	&.team-item-center {
+		&:before {
+	    border: 2px solid $theme-color;
+	    border-radius: 50%;
+	    content: "";
+	    height: 284px;
+	    left: auto;
+	    position: absolute;
+	    right: -7px;
+	    top: -103px;
+	    width: 284px;
+	    z-index: -1;
+		}
+		&:after {
+	    border: 2px solid $theme-color2;
+	    border-radius: 50%;
+	    content: "";
+	    height: 284px;
+	    left: -7px;
+	    position: absolute;
+	    right: auto;
+	    top: -103px;
+	    width: 284px;
+	    z-index: -1;
+		}
+	}
+	&.team-item-last {
+		&:before {
+	    border: 2px solid $theme-color;
+	    border-radius: 50%;
+	    content: "";
+	    height: 284px;
+	    left: auto;
+	    position: absolute;
+	    right: -72px;
+	    top: -103px;
+	    width: 284px;
+	    z-index: -1;
+		}
+		&:after {
+	    border: 2px solid $theme-color2;
+	    border-radius: 50%;
+	    content: "";
+	    height: 284px;
+	    left: auto;
+	    position: absolute;
+	    right: 27px;
+	    top: -103px;
+	    width: 284px;
+	    z-index: -1;
+		}
+	}
+	&:hover, &.active {
+		background-color: $theme-color;		
+		@include translate(0, -50px);
+		@media #{$md-device} {
+			@include translate(0, -20px);
+		}
+		&:before {
+			border-color: rgba($white, .15);
+		}
+		&:after {
+			border-color: rgba($white, .15);
+		}
+		.thumb {
+			img {
+			}
+		}
+		.content {
+			.member-info {
+				.separator-line {
+					img {
+						filter: invert(1) brightness(100);
+					}
+				}
+				.name {
+					color: $white;
+				}
+				.designation {
+					color: $white;
+				}
+				.progress-item {
+					.progress-line {
+						background-color: #49e88d;
+						.progress-bar-line {
+							background-color: $white;
+							&:after {
+								background-color: $white;
+							}
+						}
+					}
+					.progress-info {
+						.title {
+							color: $white;
+						}
+						.percent {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.shape-style {
+			img {
+				filter: invert(1) brightness(100);
+				@include scale(1);
+			}
+		}
+	}
+}
+
+.team-slider-content {
+	@media #{$sm-device} {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.team-slider-container {
+		.team-slider {
+			padding-top: 50px;
+			.swiper-slide {
+				&.swiper-slide-prev {
+					&.team-member {
+						&:before {
+					    border: 2px solid $theme-color;
+					    border-radius: 50%;
+					    content: "";
+					    height: 284px;
+					    left: 27px;
+					    position: absolute;
+					    top: -103px;
+					    width: 284px;
+					    z-index: -1;
+					    @include transition(.3s);
+						}
+						&:after {
+					    border: 2px solid $theme-color2;
+					    border-radius: 50%;
+					    content: "";
+					    height: 284px;
+					    left: -72px;
+					    position: absolute;
+					    top: -103px;
+					    width: 284px;
+					    z-index: -1;
+					    @include transition(.3s);
+						}
+						&:hover {
+							&:before, &:after {
+								border-color: rgba($white, .15);
+							}
+						}
+					}
+				}
+				&.swiper-slide-active {
+					&.team-member {
+						@media #{$lg-down-device} {
+							background-color: $theme-color;		
+							@include translate(0, -50px);
+							@media #{$lg-device} {
+								@include translate(0, -20px);
+							}
+							&:before {
+								border-color: rgba($white, .15);
+								left: auto;
+								right: -7px;
+						    top: -103px;
+							}
+							&:after {
+								border-color: rgba($white, .15);
+								left: -7px;
+								right: auto;
+						    top: -103px;
+							}
+							.thumb {
+								img {
+								}
+							}
+							.content {
+								.member-info {
+									.separator-line {
+										img {
+											filter: invert(1) brightness(100);
+										}
+									}
+									.name {
+										color: $white;
+									}
+									.designation {
+										color: $white;
+									}
+									.progress-item {
+										.progress-line {
+											background-color: #49e88d;
+											.progress-bar-line {
+												background-color: $white;
+												&:after {
+													background-color: $white;
+												}
+											}
+										}
+										.progress-info {
+											.title {
+												color: $white;
+											}
+											.percent {
+												color: $white;
+											}
+										}
+									}
+								}
+							}
+							.shape-style {
+								img {
+									filter: invert(1) brightness(100);
+									@include scale(1);
+								}
+							}
+						}
+					}
+				}
+				&.swiper-slide-next {
+					&.team-member {
+						&:before {
+					    border: 2px solid $theme-color;
+					    border-radius: 50%;
+					    content: "";
+					    height: 284px;
+					    left: auto;
+					    position: absolute;
+					    right: -72px;
+					    top: -103px;
+					    width: 284px;
+					    z-index: -1;
+						}
+						&:after {
+					    border: 2px solid $theme-color2;
+					    border-radius: 50%;
+					    content: "";
+					    height: 284px;
+					    left: auto;
+					    position: absolute;
+					    right: 27px;
+					    top: -103px;
+					    width: 284px;
+					    z-index: -1;
+						}
+						&:hover {
+							&:before, &:after {
+								border-color: rgba($white, .15);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

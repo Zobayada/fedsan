@@ -1,0 +1,88 @@
+/*
+-----------------------------------------------------------------------
+	Feature CSS
+-----------------------------------------------------------------------
+*/
+.feature-area {
+	&.feature-about-area {
+		background-color: #f6f7fc;
+		padding: 57.5px 0;
+    @media #{$md-device} {
+      padding: 60px 0 48px;
+    }
+	}
+  .feature-list {
+
+  }
+}
+
+.feature-list {
+	.feature-list-item {
+    background-color: $white;
+    border-radius: 12px;
+    color: $theme-color3;
+    display: block;
+    font-size: 25px;
+    font-weight: $font-weight-bold;
+    padding: 11px 17px 14px;
+    position: relative;
+    @include transition(.3s);
+    @media #{$lg-device} {
+      font-size: 20px;
+    }
+    @media #{$md-device} {
+      margin-bottom: 12px;
+    }
+    .icon {
+      background-color: #def5e8;
+      border-radius: 12px;
+      color: $theme-color;
+      display: inline-block;
+      font-size: 25px;
+      height: 60px;
+      line-height: 60px;
+      margin-right: 23px;
+      position: relative;
+      text-align: center;
+      top: 2px;
+      width: 60px;
+      @include transition(.3s);
+      img {
+      	width: auto;
+	      @include transition(.3s);
+      }
+    }
+    .icon-shape {
+      img {
+        position: absolute;
+        @include scale(0);
+        @include transition(.4s);
+      }
+      .shape-img1 {
+        right: 82px;
+        top: 8px;
+      }
+      .shape-img2 {
+        right: 18px;
+        top: 19px;
+      }
+      .shape-img3 {
+        bottom: 10px;
+        right: 60px;
+      }
+    }
+    &:hover {
+      background-color: $theme-color;
+      color: $white;
+      .icon {
+        background-color: $white;
+        color: $theme-color;
+      }
+      .icon-shape {
+        img {
+          @include scale(1);
+        }
+      }
+    }
+	}
+}

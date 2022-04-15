@@ -1,0 +1,193 @@
+/*
+-----------------------------------------------------------------------
+  Brand Logo CSS
+-----------------------------------------------------------------------
+*/
+
+.brand-logo-area {
+  &.brand-logo-default-area {
+    padding: 151px 0 121px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media #{$lg-device} {
+      padding: 120px 0 80px;
+    }
+    @media #{$xs-device} {
+      padding: 60px 0 50px;
+    }
+    &:before {
+      border: 2px solid $theme-color2;
+      border-radius: 50%;
+      content: "";
+      height: 769px;
+      left: -624px;
+      position: absolute;
+      top: 150px;
+      width: 769px;
+      z-index: -1;
+      @media (max-width:1699px) {
+        display: none;
+      }
+    }
+    &:after {
+      border: 2px solid $theme-color;
+      border-radius: 50%;
+      bottom: 98px;
+      content: "";
+      height: 769px;
+      left: -514px;
+      position: absolute;
+      width: 769px;
+      z-index: -1;
+      @media (max-width:1699px) {
+        display: none;
+      }
+    }
+
+    .section-title {
+      margin-bottom: 0;
+      padding-top: 13px;
+      @media #{$md-device} {
+        margin-bottom: 80px;
+      }
+      @media #{$sm-device} {
+        margin-bottom: 50px;
+      }
+      .btn-theme {
+        &.btn-border {
+          padding: 19.5px 60px 19.5px 36px;
+          @media #{$sm-device} {
+            padding: 13px 50px 13px 20px;
+          }
+          .icon {
+            right: 30px;
+            @media #{$sm-device} {
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .brand-logo-content {
+      .brand-logo-item {
+        align-items: center;
+        border: 2px solid $white;
+        border-radius: 25px;
+        display: flex;
+        height: 169px;
+        justify-content: center;
+        margin-bottom: 29px;
+        text-align: center;
+        width: 169px;
+        @media #{$xs-device} {
+          height: 140px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 140px;
+        }
+      }
+    }
+
+    .layer-shape {
+      @media #{$xs-device} {
+        display: none;
+      }
+      &:before {
+        border: 2px solid $theme-color2;
+        border-radius: 50%;
+        content: "";
+        height: 770px;
+        position: absolute;
+        right: -520px;
+        top: 165px;
+        width: 770px;
+        z-index: -1;        
+        @media (max-width:1699px) {
+          display: none;
+        }
+      }
+      &:after {
+        border: 2px solid $theme-color;
+        border-radius: 50%;
+        content: "";
+        height: 770px;
+        position: absolute;
+        right: -679px;
+        top: 152px;
+        width: 770px;
+        z-index: -1;
+        @media #{$xl-device} {
+          display: none;
+        }
+      }
+      .shape-style1 {
+        left: 20.4%;
+        position: absolute;
+        top: 61px;
+        -webkit-animation: animation-one linear infinite 5s;
+        -moz-animation: animation-one linear infinite 5s;
+        -o-animation: animation-one linear infinite 5s;
+        animation: animation-one linear infinite 5s;
+      }
+      .shape-style2 {
+        position: absolute;
+        top: 66px;
+        right: 41.4%;
+        -webkit-animation: animation-two linear infinite 5s;
+        -moz-animation: animation-two linear infinite 5s;
+        -o-animation: animation-two linear infinite 5s;
+        animation: animation-two linear infinite 5s;
+      }
+      .shape-style3 {
+        position: absolute;
+        top: 50.7%;
+        right: 13.3%;
+        -webkit-animation: animation-three linear infinite 5s;
+        -moz-animation: animation-three linear infinite 5s;
+        -o-animation: animation-three linear infinite 5s;
+        animation: animation-three linear infinite 5s;
+        @media #{$lg-device} {
+          display: none;
+        }
+      }
+      .shape-style4 {
+        bottom: 132px;
+        left: 43.7%;
+        position: absolute;
+        -webkit-animation: animation-four linear infinite 5s;
+        -moz-animation: animation-four linear infinite 5s;
+        -o-animation: animation-four linear infinite 5s;
+        animation: animation-four linear infinite 5s;
+        @media #{$lg-device} {
+          bottom: 75px;
+        }
+      }
+    }
+  }
+}
+
+.brand-logo-item {
+  img {
+    opacity: 1;
+    @include transition(.3s);
+  }
+  &:hover {
+    img {
+      opacity: .7;
+    }
+  }
+}
+
+.brand-logo-slider-container {
+  padding-left: 20px;
+  .brand-logo-slider {
+    .brand-logo-item {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      min-height: 96px;
+    }
+  }
+}

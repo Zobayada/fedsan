@@ -1,0 +1,5 @@
+Version: 1.0.1 (10 July, 2021)
+
+1. Update
+- Bootstrap to v5.x.x
+- JQuery tp v3.6.0

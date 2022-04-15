@@ -1,0 +1,483 @@
+/*
+-----------------------------------------------------------------------
+	About CSS
+-----------------------------------------------------------------------
+*/
+.about-area {
+  &.about-default-area {
+    padding: 195px 0 217px;
+    @media #{$xl-device} {
+      padding: 195px 0 165px;
+    }
+    @media #{$lg-device} {
+      padding: 100px 0 80px;
+    }
+    @media #{$sm-device} {
+      padding: 70px 0 50px;
+    }
+  }
+  .about-content {
+    padding: 47px 0 0 50px;
+    @media #{$xxl-device} {
+      margin-right: -50px;
+    }
+    @media #{$xl-device} {
+      padding: 47px 0 0 0;
+    }
+    @media #{$lg-device} {
+      padding: 0;
+    }
+    .section-title {
+      margin-bottom: 45px;
+      .title {
+        padding-right: 20px;
+      }
+      p {
+        font-size: 17px;
+        font-weight: $font-weight-medium;
+        line-height: 1.648;
+        @media #{$sm-device} {
+          font-size: 15px;
+        }
+        @media #{$xxs-device} {
+          font-size: 13px;
+        }
+        span {
+          color: $theme-color2;
+          text-decoration: underline;
+        }
+      }
+    }
+    .list-icon-style {
+      padding-right: 30px;
+      @media #{$sm-device} {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .about-content-style2 {
+    padding: 7px 0 0 70px;
+    @media #{$xl-device} {
+      padding: 7px 0 0 30px;
+    }
+    @media #{$sm-device} {
+      padding: 0;
+    }
+    .section-title {
+      margin-bottom: 44px;
+      margin-right: -43px;
+      @media #{$sm-device} {
+        margin-right: 0;
+      }
+      .title {
+        line-height: 1.2;
+        margin-bottom: 18px;
+        span {
+          color: $theme-color;
+          font-weight: $font-weight-light;
+          @media #{$md-device} {
+            z-index: auto;
+          }
+          &:after {
+            background-color: #dff3e8;
+          }
+        }
+      }
+      .subtitle-content {
+        margin-bottom: 23px;
+      }
+    }
+    .inner-content {
+      background-color: #f6f7fc;
+      margin-right: -6px;
+      padding: 51px 0 54px 0;
+      position: relative;
+      &:before {
+        background-color: #f6f7fc;
+        content: "";
+        height: 100%;
+        left: -49px;
+        position: absolute;
+        top: 0;
+        width: 49px;
+        @media #{$xl-device} {
+          left: -25px;
+          z-index: -1;
+        }
+      }
+      &:after {
+        background-color: #f6f7fc;
+        content: "";
+        height: 100%;
+        left: 100%;
+        position: absolute;
+        top: 0;
+        width: calc(100% + 400px);
+      }
+      p {
+        margin-bottom: 14px;
+        .text-block {
+          color: $theme-color3;
+          font-size: 60px;
+          font-weight: $font-weight-bold;
+          float: left;
+          line-height: 54px;
+          padding-right: 10px;
+          position: relative;
+          top: 1px;
+        }
+      }
+      .inline-style {
+        align-items: center;
+        display: flex;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+        @media #{$sm-device} {
+          display: block;
+        }
+        .btn-theme {
+          &.btn-border {
+            padding: 19.5px 58.5px 19.5px 35px;
+            @media #{$sm-device} {
+              margin-bottom: 40px;
+            }
+            .icon {
+              right: 30px;
+            }
+          }
+        }
+      }
+      .btn-play {
+        color: $theme-color;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: $font-weight-bold;
+        margin-left: 43px;
+        @media #{$sm-device} {
+          margin-left: 10px;
+        }
+        .icon {
+          background-color: $theme-color;
+          border-radius: 50%;
+          display: inline-block;
+          height: 73px;
+          line-height: 71px;
+          margin-right: 25px;
+          position: relative;
+          text-align: center;
+          width: 73px;
+          z-index: 3;
+          &:after {
+            background-color: $theme-color;
+            border-radius: 50%;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            animation: animation-scale 1.8s infinite;
+            -webkit-animation: animation-scale 1.8s infinite;
+          }
+        }
+      }
+    }
+    .text-shape {
+      bottom: 10px;
+      position: absolute;
+      right: 0;
+      pointer-events: none;
+      @media #{$lg-device} {
+        bottom: 0;
+      }
+      @media #{$sm-device} {
+        display: none;
+      }
+      img {
+        max-width: none;
+      }
+    }
+  }
+
+  .layer-style {
+    position: relative;
+    margin-left: -78px;
+    @media (max-width:1499px) {
+      margin-left: -45px;
+    }
+    @media #{$xl-device} {
+      margin-left: 0;
+    }
+    @media #{$lg-device} {
+      margin-top: 30px;
+    }
+    @media #{$md-device} {
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 100px;
+      margin-top: 40px;
+    }
+    @media #{$sm-device} {
+      margin-top: 0;
+    }
+    .thumb {
+      img {
+        border-radius: 50%;
+        max-width: none;
+        @media #{$xl-device} {
+          max-width: 100%;
+        }
+      }
+    }
+    .shape-style1 {
+      left: -47px;
+      position: absolute;
+      top: -45px;
+      z-index: -1;
+      @media #{$xl-device} {
+        left: -40px;
+      }
+      @media #{$md-device} {
+        left: -47px;
+      }
+      @media #{$sm-device} {
+        display: none;
+      }
+      img {
+        @media #{$xl-device} {
+          width: 95%;
+        }
+        @media #{$md-device} {
+          width: 100%;
+        }
+      }
+    }
+    .shape-style2 {
+      bottom: -255px;
+      left: -50px;
+      position: absolute;
+      z-index: -1;
+      @media #{$md-device} {
+        bottom: -95px;
+      }
+    }
+    .experience-time {
+      border-radius: 50%;
+      bottom: -147px;
+      position: absolute;
+      right: -49px;
+      z-index: 1;
+      @media #{$lg-device} {
+        bottom: -50px;
+      }
+      @media #{$sm-device} {
+        right: 0;
+      }
+      .content {
+        background-color: $theme-color;
+        border-radius: 50%;
+        color: $white;
+        font-size: 127.58px;
+        font-weight: $font-weight-bold;
+        height: 341px;
+        line-height: 71px;
+        padding: 105px 15px 15px;
+        position: relative;
+        text-align: center;
+        width: 341px;
+        @media #{$lg-device} {
+          height: 200px;
+          font-size: 84px;
+          line-height: 54px;
+          padding: 47px 15px 15px;
+          width: 200px;
+        }
+        &:before {
+          background-color: $white;
+          border-radius: 50%;
+          content: "";
+          height: 341px;
+          left: -20px;
+          position: absolute;
+          top: -20px;
+          width: 341px;
+          z-index: -1;
+          @media #{$lg-device} {
+            height: 200px;
+            width: 200px;
+          }
+        }
+        &:after {
+          background-color: #f6f7fc;
+          border-radius: 50%;
+          bottom: -20px;
+          content: "";
+          height: 341px;
+          left: 20px;
+          position: absolute;
+          width: 341px;
+          z-index: -1;
+          @media #{$lg-device} {
+            height: 200px;
+            width: 200px;
+          }
+        }
+        sup  {
+          font-size: 35px;
+          left: 4px;
+          top: -58px;
+          @media #{$lg-device} {
+            top: -45px;
+          }
+        }
+        span {
+          display: inline-block;
+          font-size: 25px;
+          line-height: 22px;
+          padding-top: 5px;
+          @media #{$lg-device} {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .layer-about-style {
+    position: relative;
+    @media #{$lg-device} {
+      margin-bottom: 80px;
+    }
+    @media #{$sm-device} {
+      margin-bottom: 60px;
+    }
+    .thumb {
+      img {
+        width: 100%;
+      }
+    }
+    .shape-style1 {
+      left: -81px;
+      position: absolute;
+      top: 90px;      
+      -webkit-animation: animation-five linear infinite 5s;
+      -moz-animation: animation-five linear infinite 5s;
+      -o-animation: animation-five linear infinite 5s;
+      animation: animation-five linear infinite 5s;
+      @media #{$xs-device} {
+        display: none;
+      }
+    }
+    .experience-time {
+      bottom: 40px;
+      position: absolute;
+      right: 40px;
+      z-index: 1;
+      @media #{$xs-device} {
+        bottom: 15px;
+        right: 15px;
+      }
+      .content {
+        background-color: $theme-color;
+        color: $white;
+        font-size: 127.58px;
+        font-weight: $font-weight-bold;
+        height: 305px;
+        line-height: 1px;
+        padding: 111px 15px 15px;
+        position: relative;
+        text-align: center;
+        width: 273px;
+        @media #{$xs-device} {
+          font-size: 64px;
+          height: 200px;
+          padding: 60px 15px 5px;
+          width: 200px;
+        }
+        &:before {
+          background-color: $white;
+          content: "";
+          height: 305px;
+          left: -20px;
+          position: absolute;
+          top: -20px;
+          width: 273px;
+          z-index: -1;
+          @media #{$xs-device} {
+            height: 200px;
+            left: -10px;
+            top: -10px;
+            width: 200px;
+          }
+        }
+        sup  {
+          font-size: 35px;
+          left: 4px;
+          top: -58px;
+          @media #{$xs-device} {
+            top: -20px;
+          }
+        }
+        span {
+          display: inline-block;
+          font-size: 20px;
+          font-weight: $font-weight-medium;
+          line-height: 20px;
+          padding-top: 5px;
+        }
+        .line-separetor {
+          bottom: -2px;
+          display: inline-flex;
+          line-height: 30px;
+          padding-top: 40px;
+          position: relative;
+          @media #{$xs-device} {
+            padding-bottom: 10px;
+            padding-top: 30px;
+          }
+          img {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-page-wrapper {
+  .about-area {
+    padding: 150px 0 151px;
+    @media #{$lg-device} {
+      padding: 100px 0;
+    }
+    @media #{$sm-device} {
+      padding: 70px 0;
+    }
+  }
+  .team-area {
+    padding: 142px 0 123px;
+    @media #{$lg-device} {
+      padding: 100px 0 80px;
+    }
+    @media #{$md-device} {
+      padding: 90px 0 60px;
+    }
+    @media #{$sm-device} {
+      padding: 70px 0 50px;
+    }
+    @media #{$xs-device} {
+      padding: 70px 0 40px;
+    }
+    .section-title {
+      @media #{$lg-device} {
+        margin-bottom: 30px;
+      }
+      @media #{$sm-device} {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

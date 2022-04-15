@@ -1,0 +1,72 @@
+/*
+-----------------------------------------------------------------------
+    Home Default CSS
+-----------------------------------------------------------------------
+*/
+.home-default-wrapper {
+  .header-area {
+  	&.header-default {
+			@media (max-width:1799px) {
+	      padding: 43px 0 42px 25px;
+	    }
+	    @media #{$md-device} {
+	    	padding-top: 25px;
+	    	padding-bottom: 20px;
+	    }
+	    @media #{$sm-device} {
+	    	padding: 25px 15px 20px;
+	    }
+	    @media #{$xxs-device} {
+	    	padding: 20px 0 15px;
+	    }
+		  .container {
+		  	@media (max-width:1799px) {
+		  		left: 13px;
+		  		position: relative;
+		  	}
+		  	@media #{$xl-device} {
+		  		left: 15px;
+		  		max-width: 1062px;
+		  	}
+		  	@media #{$lg-device} {
+		  		left: 13px;
+		  		max-width: 853px;
+		  	}
+		  	@media #{$md-device} {
+		  		left: 15px;
+		  		max-width: 658px;
+		  	}
+		  	@media #{$sm-device} {
+		  		left: auto;
+		  		max-width: none;
+		  		padding-left: 15px;
+		  		padding-right: 15px;
+		  	}
+		  }
+
+		  &.sticky-header {
+		  	&.transparent {
+		  		&.sticky {
+		  			.container {
+		  				@media (max-width:1799px) {
+		  					left: auto;
+		  				}
+		  				@media #{$xl-device} {
+					  		left: auto;
+					  		max-width: 1200px;
+					  	}
+					  	@media #{$lg-device} {
+					  		left: auto;
+					  		max-width: 960px;
+					  	}					  	
+					  	@media #{$md-device} {
+					  		left: auto;
+					  		max-width: 720px;
+					  	}
+		  			}
+		  		}
+		  	}
+		  }
+  	}
+  }
+}

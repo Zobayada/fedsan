@@ -1,0 +1,48 @@
+// Table of contents
+@import "tableofcontent";
+
+// Base
+@import "common/variables";
+@import "common/mixins";
+@import "common/rfs";
+
+// Typography
+ @import "common/typography";
+
+// Common Styles
+@import "virtuf/common";
+@import "virtuf/navbar";
+
+// Header
+@import "header/header";
+
+// Banner Styles
+@import "virtuf/banner";
+
+// Components
+@import "virtuf/about";
+@import "virtuf/service";
+@import "virtuf/team";
+@import "virtuf/gallery";
+@import "virtuf/portfolio";
+@import "virtuf/testimonial";
+@import "virtuf/brand-logo";
+@import "virtuf/feature";
+@import "virtuf/funfact";
+@import "virtuf/divider";
+@import "virtuf/icon-box";
+@import "virtuf/form";
+
+// Pages
+@import "pages/home-default";
+
+
+
+// Blog
+@import "virtuf/blog";
+
+// Contact
+@import "virtuf/contact";
+
+// Footer
+@import "footer/footer";

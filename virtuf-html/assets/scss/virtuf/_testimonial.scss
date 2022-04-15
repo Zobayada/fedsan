@@ -1,0 +1,200 @@
+/*
+-----------------------------------------------------------------------
+	Testimonial CSS
+-----------------------------------------------------------------------
+*/
+.testimonial-area {
+	&.testimonial-default-area {
+		padding: 180px 0 200px;
+		@media #{$lg-device} {
+			padding: 110px 0 100px;
+		}
+		@media #{$xxs-device} {
+			padding: 80px 0;
+		}
+		.section-title {
+			margin-bottom: 72px;
+			padding: 20px 0 0 70px;
+			@media #{$lg-device} {
+				margin-bottom: 50px;
+				padding: 0 0 0 30px;
+			}
+			@media #{$md-device} {
+				padding: 0;
+			}
+			.title {
+				span {
+					@media #{$md-device} {
+						z-index: auto;
+					}
+				}
+			}
+		}
+		.shape-layer {
+			margin-left: -67px;
+			position: relative;
+			@media #{$xl-device} {
+				margin-left: 35px;
+			}
+			@media #{$lg-device} {
+				margin-left: 0;
+			}
+			@media #{$md-device} {
+				display: inline-block;
+				margin-bottom: 130px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media #{$xxs-device} {
+				margin-bottom: 60px;
+			}
+			&:before {
+				border: 2px solid $theme-color;
+				border-radius: 35px;
+				content: "";
+				height: 454px;
+				left: -32px;
+				position: absolute;
+				top: -30px;
+				width: 339px;
+				z-index: -1;
+				@media #{$xxs-device} {
+					display: none;
+				}
+			}
+			&:after {
+				background-color: $theme-color;
+				border-radius: 50%;
+				bottom: -73px;
+				content: "";
+				height: 176px;
+				position: absolute;
+				right: 133px;
+				width: 176px;
+				z-index: -1;
+				@media #{$xxs-device} {
+					display: none;
+				}
+			}
+			img {
+				border-radius: 35px;
+				max-width: none;
+				@media #{$lg-device} {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.testimonial-single {
+	padding-left: 150px;
+	position: relative;
+	@media #{$lg-device} {
+		padding-left: 135px;
+	}
+	@media #{$xxs-device} {
+		padding-left: 0;
+	}
+	.icon-box {
+		background-color: #f6f7fc;
+		border-radius: 32px;
+		height: 100px;
+		left: 0;
+		line-height: 100px;
+		position: absolute;
+		text-align: center;
+		top: 8px;
+		width: 100px;
+		@media #{$xxs-device} {
+			display: none;
+		}
+	}
+	.client-thumb {
+		border-radius: 50%;
+		box-shadow: 0px 10px 40px 0px rgba(171, 181, 189, 0.35);
+		display: inline-block;
+		left: 50%;
+    position: absolute;
+    top: -55px;
+    transform: translateX(-50%);
+		img {
+			border-radius: 50%;
+		}
+	}
+	.client-content {
+		margin-bottom: 39px;
+		position: relative;
+		p {
+			color: #535458;
+			font-size: 20px;
+			font-weight: $font-weight-medium;
+			line-height: 1.75;
+			@media #{$md-device} {
+				font-size: 18px;
+			}
+			@media #{$xxs-device} {
+				font-size: 16px;
+			}
+		}
+		.quote-icon {
+			position: absolute;
+	    right: 111px;
+	    top: 18px;
+		}
+	}
+
+	.client-info {
+		.shape-line-img {
+			margin-bottom: 25px;
+			width: auto;
+		}
+		.name {
+			font-size: 27px;
+			margin-bottom: 14px;
+			@media #{$sm-device} {
+				font-size: 18px;
+			}
+		}
+		.designation {
+			background-color: #e3f9ed;
+			border-radius: 12.5px;
+			color: $theme-color;
+			display: inline-block;
+			font-size: 14px;
+			font-weight: $font-weight-normal;
+			margin: 0;
+			margin-left: -12px;
+			padding: 5px 15px;
+			@media #{$xxs-device} {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.testimonial-slider-container {
+	.swiper-button-next,
+	.swiper-button-prev {
+		bottom: 18px;
+		color: #e3e3e3;
+		display: inline-block;
+		font-size: 50px;
+		left: 25px;
+		position: absolute;
+		top: auto;
+		@include transition(.3s);
+		&:after {
+			display: none;
+		}
+		&:hover {
+			color: $theme-color;
+		}
+		@media #{$xxs-device} {
+			display: none;
+		}
+	}
+	.swiper-button-next {
+		bottom: 71px;
+	}
+}
